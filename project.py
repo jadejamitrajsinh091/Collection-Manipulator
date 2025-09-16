@@ -3,6 +3,7 @@ student=[{"id":1,"name":"ruchit","Age":20,"Grade":"A","birthdate":"2003-01-15","
 
 
 while True:
+    
     print("\nwelcome to the Student Data Organizer!\n")
 
     print("select an option:")
@@ -16,6 +17,7 @@ while True:
     Choice=input("\nEnter your Choice\n")
 
     if(Choice == "1"):
+        
         id=len(student)+1
         name= input("enter your name:")
         Age= int(input("enter your age:"))
@@ -31,15 +33,18 @@ while True:
         
         if(student == []):
             print("No student data found")
+            
         else:
             for s in student:
                 print("id:",s["id"],"name:",s["name"],"Age:",s["Age"],"Grade:",s["Grade"],"Date of Birth:",s["birth_date"],"Subjects:",s["subject"])
   
 
     elif(Choice == "3"):
+        
         sId = int(input("enter student id to update "))
 
         for m in student:
+            
             if(m["id"] == sId):
                 m["name"] =input("enter new student data to update ")
                 m["Age"] =int(input("enter student Age to update "))
@@ -48,10 +53,12 @@ while True:
                 m["subject"] =input("enter new subject to update ")
                 print("student data updated")
                 break
+                
         else:
             print("student not found")             
 
     elif(Choice == "4"):
+        
         sId = int(input("enter student id to delete "))
         for x in student:
             if(x["id"]==sId):
@@ -60,6 +67,7 @@ while True:
                 break
         else:
             print("student not found")
+            
     elif(Choice == "5"):
         if not student:
             print("No student data found")
@@ -80,6 +88,7 @@ while True:
 
     else:
         print("invalid choice, choose correctly")            
+
 
 
 
