@@ -1,4 +1,4 @@
-student=[{"id":1,"name":"jaggo","Age":200,"Grade":"F-","birthdate":"2003-01-15","subject":"social science, Science,zoology,biology"}]
+student=[{"id":1,"name":"ruchit","Age":20,"Grade":"A","birthdate":"2003-01-15","subject":"social science, Science,zoology,biology"}]
 
 
 
@@ -80,6 +80,7 @@ while True:
 
     else:
         print("invalid choice, choose correctly")            
+
 
 
 
